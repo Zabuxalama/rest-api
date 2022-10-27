@@ -15,8 +15,8 @@ var { performance } = require('perf_hooks');
 var { runtime, fetchJson } = require('../lib/myfunc')
 
 // Apikey
-var listkey = ["danzz","9286c1a775","9267ic6a0f1","927j59de9c","921n567ea6","921h5a4282","925n2c494","928b0323c9","927b0k3hp7o2","925b04ib0j","023l1qhbpk","92b1a0h7ts","92a70b789c","9291a7bk0p1","92a7o8pe9c","92y1a7l0a6","9221a7i9h2","921a7k3n94","92a0kk2bc9","921a7l9pho2","92a2n1kb0j","92b0a75k6f","92u1a7pr8s"];
-var listkeyprem = ["danzzgz"];
+var listkey = ["miaw","9286c1a775","9267ic6a0f1","927j59de9c","921n567ea6","921h5a4282","925n2c494","928b0323c9","927b0k3hp7o2","925b04ib0j","023l1qhbpk","92b1a0h7ts","92a70b789c","9291a7bk0p1","92a7o8pe9c","92y1a7l0a6","9221a7i9h2","921a7k3n94","92a0kk2bc9","921a7l9pho2","92a2n1kb0j","92b0a75k6f","92u1a7pr8s"];
+var listkeyprem = ["miawprem"];
 
 
 // Check Apikey
@@ -30,7 +30,7 @@ router.get('/checkapikey', async (req, res, next) => {
 	if (keys) {
 	json = JSON.stringify({
 		status: true,
-		creator: 'Danzz Coding',
+		creator: 'Miaw Team',
 		result: {
          apikey: keys
 		},
@@ -66,7 +66,7 @@ var port = process.env.PORT || 8888 || 5000 || 3000
         time: `${hour} : ${minute} : ${second}`,        
         speed: `${old - neww}ms`,
         info:{       
-            creator: 'Danzz Coding'
+            creator: 'Miaw Team'
         }
     }
     res.json(status)
@@ -78,7 +78,7 @@ router.get('/main/runtime', async (req, res, next) => {
 		status: true,
 		runtime: muptime(process.uptime()),
 		info:{       
-            creator: 'Danzz Coding'            
+            creator: 'Miaw Team'            
         }
     }
     res.json(runtim)
